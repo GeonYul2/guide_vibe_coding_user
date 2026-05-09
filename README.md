@@ -11,7 +11,7 @@ python3 scripts/validate_agent_task.py tasks/internal-doc-report-agent
 
 에이전트는 먼저 `wiki/index.md`로 필요한 문맥을 좁힌 뒤 `AGENTS.md`, `agent-playbook.yaml`, `workflows/build-agent.md`, `techniques/taxonomy.yaml`, `techniques/registry.yaml`, `templates/`를 원본 기준으로 검증합니다.
 
-새 작업의 첫 입력은 한 번에 양식 전체를 요구하지 않습니다. `workflows/intake.md`에 따라 한 질문씩 답을 받고, 각 답을 `tasks/<task-slug>/intake-form.md`에 누적합니다.
+새 작업의 첫 입력은 먼저 `토큰 절감모드로 시작할까요?`라는 한 문장 확인으로 시작합니다. 그다음 한 번에 양식 전체를 요구하지 않고 `workflows/intake.md`에 따라 한 질문씩 답을 받아 `tasks/<task-slug>/intake-form.md`에 누적합니다.
 
 ## 사용자 경계
 

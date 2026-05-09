@@ -30,6 +30,8 @@ python3 scripts/new_agent_task.py "<task-slug>"
 
 ## 2. Standardized Intake Gate
 
+Before creating or updating task artifacts for a new user request, ask exactly one sentence to confirm token-saving mode: `토큰 절감모드로 시작할까요?` Continue into intake or deep interview only after the answer is recorded or clearly implied.
+
 Fill `intake-form.md` first. This is the normalized user-start contract and must cover:
 
 - agent idea
@@ -44,7 +46,7 @@ Fill `intake-form.md` first. This is the normalized user-start contract and must
 - tools / data access
 - evidence of success
 
-Use `workflows/intake.md` as a conversational Q&A loop: ask exactly one missing-field question per round, write each answer into `intake-form.md`, and do not ask the human to complete the whole form at once.
+Use `workflows/intake.md` as a conversational Q&A loop: ask the token-saving-mode start gate first, then ask exactly one missing-field question per round, write each answer into `intake-form.md`, and do not ask the human to complete the whole form at once.
 
 If any field is missing, vague, or marked `Unknown - follow up required`, run `workflows/deep-interview.md` before PRD synthesis, technique selection, or implementation.
 

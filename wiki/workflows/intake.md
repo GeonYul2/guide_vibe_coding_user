@@ -4,7 +4,7 @@ Use this page to start a new automation-agent task without dumping a long form i
 
 ## Rule
 
-Ask exactly one missing-field question per round, then write the answer into `tasks/<task-slug>/intake-form.md`.
+Before intake or deep interview starts, ask exactly one sentence: `토큰 절감모드로 시작할까요?` Then ask exactly one missing-field question per round and write the answer into `tasks/<task-slug>/intake-form.md`.
 
 ## Question Order
 

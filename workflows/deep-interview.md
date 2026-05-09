@@ -4,6 +4,7 @@ Purpose: turn a vague or incomplete `intake-form.md` into an implementation-read
 
 ## Rules
 
+- If deep interview starts directly from a new user request, first ask exactly one sentence: `토큰 절감모드로 시작할까요?`; continue only after the answer is recorded or clearly implied.
 - Ask one question per round.
 - Ask about intent and boundaries before implementation details.
 - Do not start PRD synthesis or implementation until missing intake fields, non-goals, and success criteria are explicit.

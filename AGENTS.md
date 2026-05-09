@@ -19,6 +19,8 @@ When an AI coding agent uses this repository to create, modify, or evaluate an a
 
 ## Conversational Intake
 
+Before starting the intake or deep-interview loop for any new user request, ask exactly one sentence to confirm whether to start in token-saving mode: `토큰 절감모드로 시작할까요?` Continue with the interview only after that answer is recorded or clearly implied.
+
 Do not ask the human to fill the whole intake form at once. Ask one concise missing-field question per round, write each answer into `tasks/<task-slug>/intake-form.md`, and continue until all required intake fields are explicit.
 
 ## Implementation Gate

@@ -20,14 +20,23 @@ Use `templates/intake-form.md` as the source template.
 
 Do **not** ask the user to fill the full intake form in one message.
 
+Before the intake or deep-interview loop starts for a new user request, ask exactly this one-sentence start gate:
+
+```text
+토큰 절감모드로 시작할까요?
+```
+
+Then continue the interview after the answer is recorded or clearly implied.
+
 Run intake as a question-answer loop:
 
-1. Create the task folder and `intake-form.md` from the template.
-2. Extract any answers already present in the user's first message or discoverable from local repository context.
-3. Ask exactly **one** missing-field question per round.
-4. After each answer, immediately update the matching section in `intake-form.md`.
-5. Prefer concrete examples over abstract labels; ask for examples, counterexamples, or approval boundaries when a field is vague.
-6. Stop asking only when every minimum intake field below is explicit enough for PRD synthesis and validation.
+1. Ask the one-sentence token-saving-mode start gate before task artifact work.
+2. Create the task folder and `intake-form.md` from the template.
+3. Extract any answers already present in the user's first message or discoverable from local repository context.
+4. Ask exactly **one** missing-field question per round.
+5. After each answer, immediately update the matching section in `intake-form.md`.
+6. Prefer concrete examples over abstract labels; ask for examples, counterexamples, or approval boundaries when a field is vague.
+7. Stop asking only when every minimum intake field below is explicit enough for PRD synthesis and validation.
 
 Question order:
 

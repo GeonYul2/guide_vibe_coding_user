@@ -25,10 +25,19 @@ token_efficient_boot:
 intake_mode:
   style: conversational_question_answer
   max_questions_per_round: 1
+  token_saving_start_gate:
+    required: true
+    question: "토큰 절감모드로 시작할까요?"
+    rule: >
+      Before creating or updating task artifacts for a new user request, ask exactly
+      this one-sentence token-saving-mode question, then continue into the
+      conversational intake or deep-interview loop after the answer is recorded or
+      clearly implied.
   artifact: tasks/<task-slug>/intake-form.md
   rule: >
-    Ask one missing-field question at a time, write each answer into the intake
-    artifact, and do not request the full intake form in a single chat turn.
+    Ask one missing-field question at a time after the token-saving-mode start
+    gate, write each answer into the intake artifact, and do not request the full
+    intake form in a single chat turn.
 required_artifacts:
   - path: intake-form.md
     template: templates/intake-form.md
