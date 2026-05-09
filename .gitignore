@@ -1,0 +1,13 @@
+# Runtime / local agent state
+.omx/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json

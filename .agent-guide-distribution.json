@@ -1,0 +1,39 @@
+{
+  "distribution": "agent-helper-user",
+  "source_revision": "9f155a0",
+  "manifest": "distribution/user-export-manifest.yaml",
+  "copied_paths": [
+    ".gitignore",
+    "workflows/build-agent.md",
+    "workflows/deep-interview.md",
+    "workflows/intake.md",
+    "templates",
+    "techniques",
+    "scripts/new_agent_task.py",
+    "scripts/validate_agent_task.py",
+    "sources/registry.yaml",
+    "sources/summaries",
+    "repos/README.md",
+    "repos/registry.yaml",
+    "tasks/.gitkeep",
+    "AGENTS.md",
+    "README.md",
+    "SECURITY.md",
+    "agent-playbook.yaml"
+  ],
+  "excluded_paths": [
+    "maintainer/",
+    ".github/workflows/weekly-repo-radar.yml",
+    ".github/workflows/validate.yml",
+    ".github/workflows/publish-user-distribution.yml",
+    "wiki/",
+    ".obsidian/",
+    ".omx/",
+    "reports/",
+    "scripts/test_agent_guide.py",
+    "scripts/generate_llm_wiki.py",
+    "scripts/generate_repo_score_report.py",
+    "tasks/customer-email-reply-agent/",
+    "repos/radar/"
+  ]
+}
