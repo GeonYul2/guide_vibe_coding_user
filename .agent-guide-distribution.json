@@ -1,6 +1,6 @@
 {
   "distribution": "agent-helper-user",
-  "source_revision": "45f2beb",
+  "source_revision": "a3b595c",
   "manifest": "distribution/user-export-manifest.yaml",
   "copied_paths": [
     ".gitignore",
@@ -19,14 +19,14 @@
     "AGENTS.md",
     "README.md",
     "SECURITY.md",
-    "agent-playbook.yaml"
+    "agent-playbook.yaml",
+    "wiki"
   ],
   "excluded_paths": [
     "maintainer/",
     ".github/workflows/weekly-repo-radar.yml",
     ".github/workflows/validate.yml",
     ".github/workflows/publish-user-distribution.yml",
-    "wiki/",
     ".obsidian/",
     ".omx/",
     "reports/",
