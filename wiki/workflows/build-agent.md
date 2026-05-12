@@ -11,7 +11,7 @@ This is the token-saving map for `workflows/build-agent.md`. Verify details agai
    python3 scripts/new_agent_task.py "<task-slug>"
    ```
 
-3. Ask `토큰 절감모드로 시작할까요?`, then fill `intake-form.md` through the conversational intake loop.
+3. Fill `intake-form.md` through the conversational intake loop.
 4. Write `agent-prd.md` from the completed intake.
 5. Use `wiki/technique-map.md` and `techniques/taxonomy.yaml` to classify the profile.
 6. Fill `technique-selection.yaml`; every registry technique must be selected or rejected.

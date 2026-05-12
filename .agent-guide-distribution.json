@@ -1,6 +1,6 @@
 {
   "distribution": "agent-helper-user",
-  "source_revision": "a3b595c",
+  "source_revision": "fa62e8b",
   "manifest": "distribution/user-export-manifest.yaml",
   "copied_paths": [
     ".gitignore",
